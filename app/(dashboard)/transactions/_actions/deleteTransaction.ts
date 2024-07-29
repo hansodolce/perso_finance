@@ -18,7 +18,7 @@ export async function DeleteTransaction(id: string) {
   });
 
   if (!transaction) {
-    throw new Error("bad request");
+    throw new Error("mauvaise requete");
   }
 
   await prisma.$transaction([

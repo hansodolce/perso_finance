@@ -13,7 +13,7 @@ import { redirect } from "next/navigation";
 export async function CreateCategory(form: CreateCategorySchemaType) {
   const parsedBody = CreateCategorySchema.safeParse(form);
   if (!parsedBody.success) {
-    throw new Error("bad request");
+    throw new Error("mauvaise requete");
   }
 
   const user = await currentUser();
@@ -35,7 +35,7 @@ export async function CreateCategory(form: CreateCategorySchemaType) {
 export async function DeleteCategory(form: DeleteCategorySchemaType) {
   const parsedBody = DeleteCategorySchema.safeParse(form);
   if (!parsedBody.success) {
-    throw new Error("bad request");
+    throw new Error("mauvaise requete");
   }
 
   const user = await currentUser();

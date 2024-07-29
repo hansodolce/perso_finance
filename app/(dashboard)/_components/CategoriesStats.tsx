@@ -80,9 +80,9 @@ function CategoriesCard({
       <div className="flex items-center justify-between gap-2">
         {filteredData.length === 0 && (
           <div className="flex h-60 w-full flex-col items-center justify-center">
-            No data for the selected period
+            Aucunes données pour la période selectionnée
             <p className="text-sm text-muted-foreground">
-              Try selecting a different period or try adding new{" "}
+              Selectionnez une autre période ou ajoutez de nouvelles données{" "}
               {type === "income" ? "incomes" : "expenses"}
             </p>
           </div>
